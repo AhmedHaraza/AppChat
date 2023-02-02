@@ -67,9 +67,9 @@ class Myform2 extends StatelessWidget {
     return Container(
       height: 40.sp,
       child: TextFormField(
-        style:  TextStyle(
+        style:  const TextStyle(
           color: Color.fromRGBO(95, 90, 90, 1.0),
-            height: 3.75, fontSize: 13, fontWeight: FontWeight.w700,
+            height: 3.5, fontSize: 13, fontWeight: FontWeight.w700,
         ),
         decoration: InputDecoration(
           enabledBorder: OutlineInputBorder(
@@ -101,3 +101,134 @@ class Myform2 extends StatelessWidget {
     );
   }
 }
+class Searchforcontents extends StatelessWidget {
+  const Searchforcontents({Key? key}) : super(key: key);
+  @override
+  Widget build(BuildContext context) {
+    return  Container(
+      height: 40,
+      child: TextFormField(
+        style: const TextStyle(
+            color: Color.fromRGBO(255, 75, 38, 1.0),
+          fontSize: 12
+        ),
+        decoration:  InputDecoration(
+          contentPadding: const EdgeInsets.only(left: 20),
+            enabledBorder: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(50),
+                borderSide: const BorderSide(
+                    width:4
+                )
+            ),
+            focusedBorder: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(50),
+                borderSide: const BorderSide(
+                    color: Colors.white,
+                    width: 4
+                )
+            ),
+            filled: true,
+            fillColor: Colors.white,
+            hintText: "Search for contents",
+            hintStyle: const TextStyle(
+              color: Color.fromRGBO(255, 75, 38, 1.0),
+              fontWeight: FontWeight.w800,
+            ),
+            hintMaxLines: 1,
+            suffixIcon: const Padding(
+              padding: EdgeInsets.only(right: 7),
+              child: Icon(Icons.search,color: Color.fromRGBO(255, 75, 38, 1.0),),
+            )
+        ),
+      ),
+    );
+  }
+}
+class SearchforGroup extends StatelessWidget {
+  const SearchforGroup({Key? key}) : super(key: key);
+  @override
+  Widget build(BuildContext context) {
+    return  Container(
+      height: 40,
+      child: TextFormField(
+        style: const TextStyle(
+            color: Color.fromRGBO(255, 75, 38, 1.0)
+        ),
+        decoration:  InputDecoration(
+            contentPadding: const EdgeInsets.only(left: 20),
+            enabledBorder: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(50),
+                borderSide: const BorderSide(
+                    width:4
+                )
+            ),
+            focusedBorder: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(50),
+                borderSide: const BorderSide(
+                    color: Colors.white,
+                    width: 4
+                )
+            ),
+            filled: true,
+            fillColor: Colors.white,
+            hintText: "Search for Group",
+            hintStyle: const TextStyle(
+              color: Color.fromRGBO(255, 75, 38, 1.0),
+              fontWeight: FontWeight.w800,
+              fontSize: 12
+            ),
+            hintMaxLines: 1,
+            suffixIcon: const Padding(
+              padding: EdgeInsets.only(right: 7),
+              child: Icon(Icons.search,color: Color.fromRGBO(255, 75, 38, 1.0),),
+            )
+        ),
+      ),
+    );
+  }
+}
+class Search extends StatelessWidget {
+  const Search({Key? key}) : super(key: key);
+  @override
+  Widget build(BuildContext context) {
+    return  Container(
+      height: 40,
+      child: TextFormField(
+        style: const TextStyle(
+            color: Color.fromRGBO(255, 75, 38, 1.0)
+        ),
+        decoration:  InputDecoration(
+            contentPadding: const EdgeInsets.only(left: 20),
+            enabledBorder: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(50),
+                borderSide: const BorderSide(
+                    width:4
+                )
+            ),
+            focusedBorder: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(50),
+                borderSide: const BorderSide(
+                    color: Colors.white,
+                    width: 4
+                )
+            ),
+            filled: true,
+            fillColor: Colors.white,
+            hintText: "Search for contents",
+            hintStyle: const TextStyle(
+              color: Color.fromRGBO(255, 75, 38, 1.0),
+              fontSize: 12,
+              fontWeight: FontWeight.w800,
+            ),
+            hintMaxLines: 1,
+            suffixIcon: const Padding(
+              padding: EdgeInsets.only(right: 7),
+              child: Icon(Icons.search,color: Color.fromRGBO(255, 75, 38, 1.0),),
+            )
+        ),
+      ),
+    );
+  }
+}
+
+

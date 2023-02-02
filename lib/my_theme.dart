@@ -33,5 +33,43 @@ class MyThemeData {
       color: Color.fromRGBO(255, 75, 38, 1.0),
       fontSize: 12
   );
-
+  static const Searchforcontents = TextStyle(
+    fontSize: 10,
+    fontWeight: FontWeight.w800,
+    color: Color.fromRGBO(255, 75, 38, 1.0)
+  );
+  static const TextContacts = TextStyle(
+      color: Colors.white,fontSize: 40,
+      fontWeight: FontWeight.w400
+  );
+  static const Add_Members = TextStyle(
+      color: Colors.white,
+      fontSize: 30,
+      fontWeight: FontWeight.w400
+  );
+  static const Members_who_added = TextStyle(
+      color: Color.fromRGBO(255, 75, 38, 1.0),
+      fontSize: 10,
+      fontWeight: FontWeight.w800
+  );
+  static const Select_Contact = TextStyle(
+      color: Colors.white,
+      fontSize: 12,
+      fontWeight: FontWeight.w800
+  );
+  static const Addfriends = TextStyle(
+      color: Colors.white,
+      fontSize: 16,
+      fontWeight: FontWeight.w800
+  );
+  static const Wirte_a_text = TextStyle(
+      color: Colors.black,
+      fontSize: 24,
+      fontWeight: FontWeight.w800
+  );
+  static const Send_the_massage  = TextStyle(
+      color: Color.fromRGBO(255, 75, 38, 1.0),
+      fontSize: 15,
+      fontWeight: FontWeight.w800
+  );
 }

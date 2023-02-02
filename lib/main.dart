@@ -4,6 +4,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:graduation_project_my_own_talki/Chat_Screen/main_chat_screen.dart';
 import 'package:graduation_project_my_own_talki/ForgetPassword.dart';
+import 'package:graduation_project_my_own_talki/Home_Screen_Messenger/Chat.dart';
+import 'package:graduation_project_my_own_talki/Home_Screen_Messenger/Group.dart';
+import 'package:graduation_project_my_own_talki/Home_Screen_Messenger/Home_Screen_Messenger.dart';
+import 'package:graduation_project_my_own_talki/Home_Screen_Messenger/add_Friend.dart';
+import 'package:graduation_project_my_own_talki/Home_Screen_Messenger/add_Member.dart';
+import 'package:graduation_project_my_own_talki/Home_Screen_Messenger/contectsmessegegroup.dart';
 import 'package:graduation_project_my_own_talki/OtpForm.dart';
 import 'package:graduation_project_my_own_talki/Sign%20In.dart';
 import 'package:graduation_project_my_own_talki/create%20an%20account.dart';
@@ -34,14 +40,26 @@ class Home_page extends StatelessWidget{
           //MainChatScreen.Main_Chat_Screen,
           //OtPForm.route_Otp,
           //ForgetPassword.Route_ForgetPassword,
-          Sign_In.Route_Sign_In,
+          //Sign_In.Route_Sign_In,
+          contectsmessegegroup.route_contectsmessegegroup,
+          //Add_Members.route_Add_Members,
+          //Group.route_Group,
+          //Addfrinds.route_Add_frinds,
+          //Home_Screen_Messenger.route_Home_Messenger,
+          //Chat.route_Chat,
           //create_an_account.route_name_create_an_account,
           routes: {
-            MainChatScreen.Main_Chat_Screen:(c)=>MainChatScreen(),
+            contectsmessegegroup.route_contectsmessegegroup:(c)=>contectsmessegegroup(),
+            Addfrinds.route_Add_frinds:(c)=>Addfrinds(),
+            Group.route_Group:(c)=>Group(),
+            Add_Members.route_Add_Members:(c)=>Add_Members(),
+            Chat.route_Chat:(c)=>Chat(),
+            Home_Screen_Messenger.route_Home_Messenger:(c)=>Home_Screen_Messenger(),
+            MainChatScreen.Main_Chat_Screen:(c)=>const MainChatScreen(),
             OtPForm.route_Otp:(c)=>OtPForm(),
             ForgetPassword.Route_ForgetPassword:(c)=>ForgetPassword(),
             Sign_In.Route_Sign_In:(c)=>Sign_In(),
-            create_an_account.route_name_create_an_account : (c)=>create_an_account()
+            create_an_account.route_name_create_an_account:(c)=>create_an_account()
             //create_an_account.route_name_create_an_account
           },
         );

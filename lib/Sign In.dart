@@ -19,15 +19,15 @@ class _Sign_InState extends State<Sign_In> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // bottomNavigationBar: Container(
-      //   height: 70.h,
-      //   child: Text(
-      //     'Back',
-      //     style: MyThemeData.Text_Sin_in,
-      //     textAlign: TextAlign.center,
-      //
-      //   ),
-      // ),
+      bottomNavigationBar: Container(
+        height: 95.h,
+        child: Text(
+          'Back',
+          style: MyThemeData.Text_Sin_in,
+          textAlign: TextAlign.center,
+
+        ),
+      ),
       backgroundColor: const Color.fromRGBO(22, 22, 22, 1.0),
       body: SingleChildScrollView(
         child: Column(
@@ -37,9 +37,7 @@ class _Sign_InState extends State<Sign_In> {
               margin: EdgeInsets.only(top: 120,left: 20,bottom: 34),
               width: 132,
               height: 55,
-              child: Image.asset("assets/image/Talki.png",
-
-              ),
+              child: Image.asset("assets/image/Talki.png",),
             ),
             Container(
               margin: const EdgeInsets.only(left: 20, right: 19),
@@ -86,7 +84,7 @@ class _Sign_InState extends State<Sign_In> {
                           ),
                           onTap: ()=> Select_Screen_create_an_ccount(context)
                         ),
-                        const SizedBox(width: 155),
+                        const SizedBox(width: 110),
                         InkWell(
                           child: const Text(
                             'Forget Password',
@@ -107,7 +105,7 @@ class _Sign_InState extends State<Sign_In> {
                         style: MyThemeData.Register,
                       )),
                       Container(
-                        margin: const EdgeInsets.only(right: 20),
+                        margin: const EdgeInsets.only(right: 10),
                         child: InkWell(
                             child: My_CircleAvatar(),
                           onTap: ()=>Select_Screen_Pinned_Message(context),
