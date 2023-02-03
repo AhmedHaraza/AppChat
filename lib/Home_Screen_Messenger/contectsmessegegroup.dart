@@ -10,6 +10,7 @@ class contectsmessegegroup extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children:  [
@@ -36,7 +37,18 @@ class contectsmessegegroup extends StatelessWidget {
             child: Container(
                 height: 150.h,
               color: Colors.white,
-              child: const Center(child: Text("Write a text",style: MyThemeData.Wirte_a_text,)),
+              child: Padding(
+                padding: REdgeInsets.only(left: 40,right: 40),
+                child: TextFormField(
+                  decoration: const InputDecoration(
+                    enabledBorder: UnderlineInputBorder(
+                      borderSide: BorderSide(
+                        color: Colors.white
+                      )
+                    )
+                  ),
+                ),
+              )
             ),
           ),
            SizedBox(height: 20.h),
@@ -44,9 +56,9 @@ class contectsmessegegroup extends StatelessWidget {
             padding:  REdgeInsets.only(right: 20,left: 20),
             child: Row(
               children:  [
-                Text("Send the massage ",style: MyThemeData.Send_the_massage,),
+                const Text("Send the massage ",style: MyThemeData.Send_the_massage,),
                 SizedBox(width: 150.w),
-                CircleAvatar_turn_right(),
+                const CircleAvatar_turn_right(),
               ],
             ),
           )

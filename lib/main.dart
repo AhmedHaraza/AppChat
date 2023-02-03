@@ -15,10 +15,7 @@ import 'package:graduation_project_my_own_talki/my_theme.dart';
 void main()
 {
   runApp(
-    DevicePreview(
-      enabled: true,
-        builder: (c)=> Home_page()
-    )
+    Home_page()
   );
 }
 

@@ -30,8 +30,11 @@ class Add_Members extends StatelessWidget {
              SizedBox(height: 15.h,),
             const Text("Select Contact",style: MyThemeData.Select_Contact,),
             Container(
-              margin:  REdgeInsets.only(top: 380,left: 270),
-                child: My_CircleAvatar_check()
+              margin: REdgeInsets.only(right: 5,top: 350),
+              child: Align(
+                alignment: Alignment.bottomRight,
+                  child: My_CircleAvatar_check()
+              ),
             )
           ],
         ),
