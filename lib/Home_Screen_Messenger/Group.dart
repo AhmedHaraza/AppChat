@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:graduation_project_my_own_talki/CircleAvatar/CircleAvatar_add.dart';
 import 'package:graduation_project_my_own_talki/Home_Screen_Messenger/boutonnavigationbar.dart';
 import 'package:graduation_project_my_own_talki/TextForm/Myform.dart';
@@ -11,19 +12,19 @@ class Group extends StatelessWidget {
     return Scaffold(
       resizeToAvoidBottomInset: false,
       body: Padding(
-        padding: const EdgeInsets.only(top: 80,left: 20),
+        padding:  REdgeInsets.only(top: 80,left: 20),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const Text("Pinned Message",style: MyThemeData.Addfriends,),
-            const SizedBox(height: 13,),
+             SizedBox(height: 13.h,),
             const CircleAvatar_add(),
-            const SizedBox(height: 13,),
+             SizedBox(height: 13.h,),
             Container(
-              margin: const EdgeInsets.only(right: 20),
+              margin:  REdgeInsets.only(right: 20),
                 child: const SearchforGroup(),
             ),
-            const SizedBox(height: 13,),
+             SizedBox(height: 13.h,),
             const Text("Your Groups",style: MyThemeData.Addfriends,),
           ],
         ),
@@ -32,7 +33,7 @@ class Group extends StatelessWidget {
       floatingActionButton: FloatingActionButton(
         backgroundColor:  const Color.fromRGBO(255, 75, 38, 1.0),
         onPressed: (){},
-        child: const Icon(Icons.add,size: 30,),
+        child:  Icon(Icons.add,size: 30.w,),
       ),
        bottomNavigationBar: bouton_navigation_bar(),
     );

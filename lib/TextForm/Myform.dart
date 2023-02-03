@@ -67,19 +67,19 @@ class Myform2 extends StatelessWidget {
     return Container(
       height: 40.sp,
       child: TextFormField(
-        style:  const TextStyle(
-          color: Color.fromRGBO(95, 90, 90, 1.0),
-            height: 3.5, fontSize: 13, fontWeight: FontWeight.w700,
+        style:   TextStyle(
+          color: const Color.fromRGBO(95, 90, 90, 1.0),
+            height: 3.5.h, fontSize: 13, fontWeight: FontWeight.w700,
         ),
         decoration: InputDecoration(
           enabledBorder: OutlineInputBorder(
-              borderRadius: BorderRadius.circular(15),
+              borderRadius: BorderRadius.circular(15.r),
               borderSide:
-                  const BorderSide(color: MyThemeData.colorgray, width: 3)),
+                   BorderSide(color: MyThemeData.colorgray, width: 3.w)),
           focusedBorder: OutlineInputBorder(
-              borderRadius: BorderRadius.circular(15),
+              borderRadius: BorderRadius.circular(15.r),
               borderSide:
-                  const BorderSide(color: MyThemeData.colorgray, width: 3)),
+                   BorderSide(color: MyThemeData.colorgray, width: 3.w)),
           hintText: "$name",
           hintStyle: TextStyle(
             color: MyThemeData.filetextfiled,
@@ -90,7 +90,7 @@ class Myform2 extends StatelessWidget {
           filled: true,
           fillColor: MyThemeData.colorgray,
           suffixIcon: Padding(
-            padding: const EdgeInsets.only(right: 8),
+            padding:  REdgeInsets.only(right: 8),
             child: addicon,
           ),
           prefixIcon: Lock,
@@ -106,25 +106,25 @@ class Searchforcontents extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  Container(
-      height: 40,
+      height: 40.h,
       child: TextFormField(
         style: const TextStyle(
             color: Color.fromRGBO(255, 75, 38, 1.0),
           fontSize: 12
         ),
         decoration:  InputDecoration(
-          contentPadding: const EdgeInsets.only(left: 20),
+          contentPadding:  REdgeInsets.only(left: 20),
             enabledBorder: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(50),
-                borderSide: const BorderSide(
-                    width:4
+                borderRadius: BorderRadius.circular(50.r),
+                borderSide:  BorderSide(
+                    width:4.w
                 )
             ),
             focusedBorder: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(50),
-                borderSide: const BorderSide(
+                borderRadius: BorderRadius.circular(50.r),
+                borderSide:  BorderSide(
                     color: Colors.white,
-                    width: 4
+                    width: 4.w
                 )
             ),
             filled: true,
@@ -135,9 +135,9 @@ class Searchforcontents extends StatelessWidget {
               fontWeight: FontWeight.w800,
             ),
             hintMaxLines: 1,
-            suffixIcon: const Padding(
-              padding: EdgeInsets.only(right: 7),
-              child: Icon(Icons.search,color: Color.fromRGBO(255, 75, 38, 1.0),),
+            suffixIcon:  Padding(
+              padding: REdgeInsets.only(right: 7),
+              child: const Icon(Icons.search,color: Color.fromRGBO(255, 75, 38, 1.0),),
             )
         ),
       ),
@@ -149,24 +149,24 @@ class SearchforGroup extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  Container(
-      height: 40,
+      height: 40.h,
       child: TextFormField(
         style: const TextStyle(
             color: Color.fromRGBO(255, 75, 38, 1.0)
         ),
         decoration:  InputDecoration(
-            contentPadding: const EdgeInsets.only(left: 20),
+            contentPadding:  REdgeInsets.only(left: 20),
             enabledBorder: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(50),
-                borderSide: const BorderSide(
-                    width:4
+                borderRadius: BorderRadius.circular(50.r),
+                borderSide:  BorderSide(
+                    width:4.w
                 )
             ),
             focusedBorder: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(50),
-                borderSide: const BorderSide(
+                borderRadius: BorderRadius.circular(50.r),
+                borderSide:  BorderSide(
                     color: Colors.white,
-                    width: 4
+                    width: 4.w
                 )
             ),
             filled: true,
@@ -178,9 +178,9 @@ class SearchforGroup extends StatelessWidget {
               fontSize: 12
             ),
             hintMaxLines: 1,
-            suffixIcon: const Padding(
-              padding: EdgeInsets.only(right: 7),
-              child: Icon(Icons.search,color: Color.fromRGBO(255, 75, 38, 1.0),),
+            suffixIcon:  Padding(
+              padding: REdgeInsets.only(right: 7),
+              child: const Icon(Icons.search,color: Color.fromRGBO(255, 75, 38, 1.0),),
             )
         ),
       ),
@@ -192,24 +192,24 @@ class Search extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  Container(
-      height: 40,
+      height: 40.h,
       child: TextFormField(
         style: const TextStyle(
             color: Color.fromRGBO(255, 75, 38, 1.0)
         ),
         decoration:  InputDecoration(
-            contentPadding: const EdgeInsets.only(left: 20),
+            contentPadding:  REdgeInsets.only(left: 20),
             enabledBorder: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(50),
-                borderSide: const BorderSide(
-                    width:4
+                borderRadius: BorderRadius.circular(50.r),
+                borderSide:  BorderSide(
+                    width:4.w
                 )
             ),
             focusedBorder: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(50),
-                borderSide: const BorderSide(
+                borderRadius: BorderRadius.circular(50.r),
+                borderSide:  BorderSide(
                     color: Colors.white,
-                    width: 4
+                    width: 4.w
                 )
             ),
             filled: true,
@@ -221,9 +221,9 @@ class Search extends StatelessWidget {
               fontWeight: FontWeight.w800,
             ),
             hintMaxLines: 1,
-            suffixIcon: const Padding(
-              padding: EdgeInsets.only(right: 7),
-              child: Icon(Icons.search,color: Color.fromRGBO(255, 75, 38, 1.0),),
+            suffixIcon:  Padding(
+              padding: REdgeInsets.only(right: 7),
+              child: const Icon(Icons.search,color: Color.fromRGBO(255, 75, 38, 1.0),),
             )
         ),
       ),

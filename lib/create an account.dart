@@ -1,5 +1,6 @@
 // ignore_for_file: use_key_in_widget_constructors, constant_identifier_names, camel_case_types, sort_child_properties_last, avoid_unnecessary_containers, file_names, non_constant_identifier_names
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:graduation_project_my_own_talki/CircleAvatar/CircleAvatar.dart';
 import 'package:graduation_project_my_own_talki/Navigator.dart';
 import 'package:graduation_project_my_own_talki/Sign%20In.dart';
@@ -29,7 +30,7 @@ class _create_an_accountState extends State<create_an_account> {
               child: Row(
                 children: [
                   Padding(
-                      padding: const EdgeInsets.only(top: 60, left: 20, right: 170),
+                      padding:  REdgeInsets.only(top: 60, left: 20, right: 170),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
@@ -43,49 +44,49 @@ class _create_an_accountState extends State<create_an_account> {
                           ),
                         ],
                       )),
-                  const SizedBox(height: 4),
+                   SizedBox(height: 4.h),
                 ],
               ),
             ),
             InkWell(
               onTap: () {},
-              child: const Center(
+              child:  Center(
                 child: CircleAvatar(
-                  child: ImageIcon(AssetImage('assets/image/camera.png')),
-                  backgroundColor: Color.fromRGBO(95, 90, 90, 1.0),
-                  radius: 40,
+                  child: const ImageIcon(AssetImage('assets/image/camera.png')),
+                  backgroundColor: const Color.fromRGBO(95, 90, 90, 1.0),
+                  radius: 40.r,
                 ),
               ),
             ),
-            const SizedBox(
-              height: 14,
+             SizedBox(
+              height: 14.h,
             ),
             Padding(
-                padding: const EdgeInsets.only(left: 20, right: 20),
+                padding:  REdgeInsets.only(left: 20, right: 20),
                 child: MyForme(
                     'Email or Phone Number',
                     icon: 'assets/image/icon_man.png',
                     TextInputType.emailAddress)),
-            const SizedBox(height: 10),
+             SizedBox(height: 10.h),
             Container(
               child: Padding(
-                padding: const EdgeInsets.only(left: 20, right: 20),
+                padding:  REdgeInsets.only(left: 20, right: 20),
                 child: MyForme(
                     'first Name',
                     icon: 'assets/image/icon_man.png',
                     TextInputType.name),
               ),
             ),
-            const SizedBox(height: 10),
+             SizedBox(height: 10.h),
             Container(
-                margin: const EdgeInsets.fromLTRB(20, 0, 20, 0),
+                margin:  REdgeInsets.fromLTRB(20, 0, 20, 0),
                 child: MyForme(
                     'Last Name',
                     icon: 'assets/image/icon_man.png',
                     TextInputType.name)),
-            const SizedBox(height: 10),
+             SizedBox(height: 10.h),
             Padding(
-              padding: const EdgeInsets.only(left: 20, right: 20),
+              padding:  REdgeInsets.only(left: 20, right: 20),
               child: Myform2(
                   'Password',
                   const Icon(
@@ -105,10 +106,10 @@ class _create_an_accountState extends State<create_an_account> {
                     color: const Color.fromRGBO(95, 90, 90, 1.0),
                   )),
             ),
-            const SizedBox(height: 10),
+             SizedBox(height: 10.h),
             Center(
               child: Padding(
-                padding: const EdgeInsets.only(left: 20, right: 20),
+                padding:  REdgeInsets.only(left: 20, right: 20),
                 child: Myform2(
                     'Confirm Password',
                     const Icon(
@@ -126,9 +127,9 @@ class _create_an_accountState extends State<create_an_account> {
                     )),
               ),
             ),
-            const SizedBox(height: 10),
+             SizedBox(height: 10.h),
             Padding(
-              padding: const EdgeInsets.only(left: 20, right: 20),
+              padding:  REdgeInsets.only(left: 20, right: 20),
               child: Myform2(
                 'Birthdate dd / mm / yy',
                 const Icon(
@@ -139,20 +140,20 @@ class _create_an_accountState extends State<create_an_account> {
                 TextInputType.visiblePassword,
               ),
             ),
-            const SizedBox(height:10),
+             SizedBox(height:10.h),
             Wrap(
               children: [
                 Container(
-                  margin: const EdgeInsets.only(left: 20),
-                  width: 7.0,
-                  height: 15.0,
+                  margin:  REdgeInsets.only(left: 20),
+                  width: 7.0.w,
+                  height: 15.0.h,
                   decoration: const BoxDecoration(
                       color: Color.fromRGBO(95, 90, 90, 1.0),
                       shape: BoxShape.circle),
                 ),
-                const SizedBox(
-                  width: 4,
-                  height: 20,
+                 SizedBox(
+                  width: 4.w,
+                  height: 20.h,
                 ),
                 Container(
                   child: RichText(
@@ -179,17 +180,17 @@ class _create_an_accountState extends State<create_an_account> {
               ],
             ),
             Container(
-              margin: const EdgeInsets.only(left: 40),
+              margin:  REdgeInsets.only(left: 40),
               //child: const Text('   offer',style: MyThemeData.Rich_Text,),
             ),
             const SizedBox(height: 10),
             Row(
               children:  [
-                 const Expanded(
+                  Expanded(
                   flex: 2,
                   child: Padding(
-                    padding: EdgeInsets.only(left: 24),
-                     child: Text('Register',style: MyThemeData.Register,)
+                    padding: REdgeInsets.only(left: 24),
+                     child: const Text('Register',style: MyThemeData.Register,)
                   ),
                 ),
                 Expanded(child: InkWell(
@@ -201,9 +202,9 @@ class _create_an_accountState extends State<create_an_account> {
                 )
               ],
             ),
-            const SizedBox(height: 13),
+             SizedBox(height: 13.h),
             Padding(
-              padding: const EdgeInsets.only(left: 20,right: 20),
+              padding:  REdgeInsets.only(left: 20,right: 20),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: const [
@@ -218,39 +219,39 @@ class _create_an_accountState extends State<create_an_account> {
                 ],
               ),
             ),
-            const SizedBox(height: 10),
+             SizedBox(height: 10.h),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
-              children: const [
-                Image(image: AssetImage('assets/image/logos_google-icon.png')),
+              children:  [
+                const Image(image: AssetImage('assets/image/logos_google-icon.png')),
                 SizedBox(
-                  width: 17,
+                  width: 17.w,
                 ),
-                Center(
+                const Center(
                   child: Image(
                       image:
                           AssetImage('assets/image/foundation_social-apple.png')),
                 ),
-                SizedBox(
-                  width: 17,
+                 SizedBox(
+                  width: 17.w,
                 ),
-                Center(child: Image(image: AssetImage('assets/image/logos_facebook.png'))),
+                const Center(child: Image(image: AssetImage('assets/image/logos_facebook.png'))),
               ],
             ),
-            const SizedBox(height: 12),
+             SizedBox(height: 12.h),
              Center(
               child: InkWell(
                 onTap: (){
                   Select_Screen_Sin_In(context);
                 },
-                child: Text(
+                child: const Text(
                   'Back',
                   style: MyThemeData.Text_Sin_in,
                 ),
               ),
             ),
             Container(
-              margin: const EdgeInsets.only(bottom: 30),
+              margin:  REdgeInsets.only(bottom: 30),
             )
           ],
         ),

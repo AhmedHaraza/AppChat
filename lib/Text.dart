@@ -21,7 +21,7 @@ class New extends StatelessWidget {
             ),
           ),
           // Solid text as fill.
-          Text(
+          const Text(
             'Talki',
             style: TextStyle(
               fontSize: 32,

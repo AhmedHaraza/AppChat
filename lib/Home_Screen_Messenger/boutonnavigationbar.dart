@@ -9,7 +9,7 @@ class _bouton_navigation_barState extends State<bouton_navigation_bar> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding:  REdgeInsets.only(bottom:22),
+      // padding:  REdgeInsets.only(bottom:22),
       child: BottomAppBar(
         notchMargin: 5,
         shape: CircularNotchedRectangle(),

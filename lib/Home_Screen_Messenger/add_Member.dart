@@ -14,23 +14,23 @@ class Add_Members extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body:  Padding(
-        padding: const EdgeInsets.only(top:80,left: 20,right: 20),
+        padding:  REdgeInsets.only(top:80,left: 20,right: 20),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children:  [
             const Text("Add Members",style:MyThemeData.Add_Members),
-            const SizedBox(height: 15,),
+             SizedBox(height: 15.h,),
             const Text("Members who added",style:MyThemeData.Members_who_added),
-            const SizedBox(height: 30,),
-            const SizedBox(height: 30,),
+             SizedBox(height: 30.h,),
+             SizedBox(height: 30.h,),
             Container(
               width: 500,
                 child: const Searchforcontents()
             ),
-            const SizedBox(height: 15,),
+             SizedBox(height: 15.h,),
             const Text("Select Contact",style: MyThemeData.Select_Contact,),
             Container(
-              margin: const EdgeInsets.only(top: 380,left: 270),
+              margin:  REdgeInsets.only(top: 380,left: 270),
                 child: My_CircleAvatar_check()
             )
           ],

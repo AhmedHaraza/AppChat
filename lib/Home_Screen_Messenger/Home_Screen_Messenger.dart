@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:graduation_project_my_own_talki/CircleAvatar/CircleAvatar_add.dart';
 import 'package:graduation_project_my_own_talki/Home_Screen_Messenger/boutonnavigationbar.dart';
 import 'package:graduation_project_my_own_talki/TextForm/Myform.dart';
@@ -16,22 +17,22 @@ class Home_Screen_Messenger extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Container(
-              margin: const EdgeInsets.only(top: 100,left: 20),
+              margin:  REdgeInsets.only(top: 100,left: 20),
               child: const Text("Pinned Message",style: MyThemeData.Addfriends,)
           ),
-          SizedBox(height: 10,),
+          SizedBox(height: 10.h,),
           Padding(
-            padding: const EdgeInsets.only(left: 20),
+            padding:  REdgeInsets.only(left: 20),
             child: const CircleAvatar_add(),
           ),
           const SizedBox(height: 13,),
-          const Padding(
-            padding:  EdgeInsets.only(left: 20,right: 20),
+           Padding(
+            padding:  REdgeInsets.only(left: 20,right: 20),
             child: Searchforcontents()
           ),
-          const SizedBox(height: 13,),
+           SizedBox(height: 13.h,),
           Padding(
-            padding: const EdgeInsets.only(left: 20),
+            padding:  REdgeInsets.only(left: 20),
             child: const Text("Your Message",style: MyThemeData.Addfriends,),
           )
         ],
