@@ -24,7 +24,7 @@ class My_CircleAvatar extends StatelessWidget {
                   )
                 ]
           ),
-          child:  Icon(Icons.east, color: Colors.white, size: 30.w,),
+          child:  Icon(Icons.east, color: Colors.white, size: 30.sp,),
         ),
       ],
     );

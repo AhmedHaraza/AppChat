@@ -33,7 +33,7 @@ class Group extends StatelessWidget {
       floatingActionButton: FloatingActionButton(
         backgroundColor:  const Color.fromRGBO(255, 75, 38, 1.0),
         onPressed: (){},
-        child:  Icon(Icons.add,size: 30.w,),
+        child:  Icon(Icons.add,size: 30.sp,),
       ),
        bottomNavigationBar: bouton_navigation_bar(),
     );

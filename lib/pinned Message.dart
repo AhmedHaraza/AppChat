@@ -18,8 +18,8 @@ class Screen_Chat extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const Text('Back',style: TextStyle(
-                fontSize: 20,
+             Text('Back',style: TextStyle(
+                fontSize: 20.sp,
                 color: Colors.white
             ),),
              SizedBox(height: 50.h),
@@ -27,8 +27,8 @@ class Screen_Chat extends StatelessWidget {
               onTap: (){
 
               },
-              child: const Text('Chat',style: TextStyle(
-                  fontSize: 20,
+              child:  Text('Chat',style: TextStyle(
+                  fontSize: 20.sp,
                   color: Colors.white
               ),),
             ),

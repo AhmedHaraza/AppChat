@@ -9,7 +9,7 @@ class CircleAvatar_turn_right extends StatelessWidget {
       children: [
         Container(
           width: 40.w,
-          height: 40.w,
+          height: 40.h,
           decoration:  BoxDecoration(
               color: Color.fromRGBO(255, 75, 38, 1.0),
               shape: BoxShape.circle,
@@ -22,7 +22,7 @@ class CircleAvatar_turn_right extends StatelessWidget {
                 )
               ]
           ),
-          child:  Icon(Icons.arrow_right_alt_sharp, color: Colors.white, size: 40.w,),
+          child:  Icon(Icons.arrow_right_alt_sharp, color: Colors.white, size: 40.sp,),
         ),
       ],
     );

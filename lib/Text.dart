@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class New extends StatelessWidget {
   const New({Key? key}) : super(key: key);
@@ -13,7 +14,7 @@ class New extends StatelessWidget {
           Text(
             'Talki',
             style: TextStyle(
-              fontSize: 32,
+              fontSize: 32.sp,
               foreground: Paint()
                 ..style = PaintingStyle.stroke
                 ..strokeWidth = 16
@@ -21,10 +22,10 @@ class New extends StatelessWidget {
             ),
           ),
           // Solid text as fill.
-          const Text(
+           Text(
             'Talki',
             style: TextStyle(
-              fontSize: 32,
+              fontSize: 32.sp,
               color: Colors.orange,
             ),
           ),

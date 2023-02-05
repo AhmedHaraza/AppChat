@@ -37,15 +37,34 @@ class contectsmessegegroup extends StatelessWidget {
             child: Container(
                 height: 150.h,
               color: Colors.white,
-              child: Padding(
-                padding: REdgeInsets.only(left: 40,right: 40),
-                child: TextFormField(
-                  decoration: const InputDecoration(
-                    enabledBorder: UnderlineInputBorder(
-                      borderSide: BorderSide(
-                        color: Colors.white
-                      )
-                    )
+              child: Center(
+                child: Padding(
+                  padding: REdgeInsets.only(left: 40,right: 40),
+                  child: Center(
+                    child: TextFormField(
+                      textAlign: TextAlign.center,
+                      decoration:  InputDecoration(
+                        hintText: "Write a Text",
+                        hintStyle: TextStyle(
+                          color: Colors.black,
+                          fontSize: 20.sp,
+                          fontWeight: FontWeight.w800
+                        ),
+                        focusedBorder: const OutlineInputBorder(
+                          borderSide: BorderSide(
+                            color: Colors.transparent
+                          )
+                        ),
+                        enabledBorder: const UnderlineInputBorder(
+                          borderSide: BorderSide(
+                            color: Colors.transparent
+                          )
+                        )
+                      ),
+                      keyboardType: TextInputType.multiline,
+                      maxLines: null,
+                      minLines: null,
+                    ),
                   ),
                 ),
               )

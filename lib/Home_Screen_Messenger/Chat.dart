@@ -37,7 +37,7 @@ class _ChatState extends State<Chat>with SingleTickerProviderStateMixin {
               children: [
                  Padding(
                   padding: REdgeInsets.only(left: 20,right: 10),
-                  child: Text("Contacts", style: MyThemeData.TextContacts),
+                  child: const Text("Contacts", style: MyThemeData.TextContacts),
                 ),
                 Expanded(
                   child: Container(
@@ -59,7 +59,7 @@ class _ChatState extends State<Chat>with SingleTickerProviderStateMixin {
                           focusedBorder: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(20.r),
                               borderSide:  BorderSide(
-                                  color: Color.fromRGBO(0, 0, 0, 1.0),
+                                  color: const Color.fromRGBO(0, 0, 0, 1.0),
                                   width: 4.w
                               )
                           ),
@@ -73,7 +73,7 @@ class _ChatState extends State<Chat>with SingleTickerProviderStateMixin {
                           hintMaxLines: 1,
                           suffixIcon:  Padding(
                             padding: REdgeInsets.only(right: 7),
-                            child: Icon(Icons.search,color: Color.fromRGBO(255, 75, 38, 1.0),size: 20.w,),
+                            child: Icon(Icons.search,color: const Color.fromRGBO(255, 75, 38, 1.0),size: 20.sp,),
                           )
                       ),
                     ),

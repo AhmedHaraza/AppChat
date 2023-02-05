@@ -13,18 +13,18 @@ class My_CircleAvatar_check extends StatelessWidget {
           width: 40.w,
           height: 40.h,
           decoration:  BoxDecoration(
-              color: Color.fromRGBO(255, 75, 38, 1.0),
+              color: const Color.fromRGBO(255, 75, 38, 1.0),
               shape: BoxShape.circle,
               boxShadow: [
                 BoxShadow(
-                    color: Color.fromRGBO(255, 75, 38, 1.0),
+                    color: const Color.fromRGBO(255, 75, 38, 1.0),
                     spreadRadius: 3.r,
                     blurRadius: 5.r,
-                    offset: Offset(0.0, 0.0)
+                    offset: const Offset(0.0, 0.0)
                 )
               ]
           ),
-          child:  Icon(Icons.check, color: Colors.white, size: 40.w,),
+          child:  Icon(Icons.check, color: Colors.white, size: 40.sp,),
         ),
       ],
     );

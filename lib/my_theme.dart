@@ -1,6 +1,7 @@
-// ignore_for_file: constant_identifier_names
+// ignore_for_file: constant_identifier_names, non_constant_identifier_names
 
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class MyThemeData {
   static const Color colorgray = Color.fromRGBO(44, 44, 44, 1.0);
@@ -9,67 +10,67 @@ class MyThemeData {
   static const TextStyle fontWeight  = TextStyle(fontWeight: FontWeight.w700);
   static ThemeData lightTheme = ThemeData(
       scaffoldBackgroundColor: Colors.black,
-      textTheme: const TextTheme(
+      textTheme:  TextTheme(
           headline1: TextStyle(
-              fontSize: 32,
+              fontSize: 32.sp,
               color: Colors.white,
               fontWeight: FontWeight.bold)));
-  static const Register = TextStyle(
-    fontSize: 24,
+  static  TextStyle Register = TextStyle(
+    fontSize: 24.sp,
     fontWeight: FontWeight.w700,
     color: Colors.white
   );
-  static const Text_Sin_in = TextStyle(
+  static  TextStyle Text_Sin_in = TextStyle(
     fontWeight: FontWeight.w700,
-    color: Color.fromRGBO(95, 90, 90, 1.0),
-    fontSize: 16
+    color: const Color.fromRGBO(95, 90, 90, 1.0),
+    fontSize: 16.sp
   );
-  static const Rich_Text = TextStyle(
-      color: Color.fromRGBO(95, 90, 90, 1.0),
-      fontSize: 12,
+  static  TextStyle Rich_Text = TextStyle(
+      color: const Color.fromRGBO(95, 90, 90, 1.0),
+      fontSize: 12.sp,
   );
-  static const Page_Sign_in = TextStyle(
+  static  TextStyle Page_Sign_in = TextStyle(
       fontWeight: FontWeight.w700,
-      color: Color.fromRGBO(255, 75, 38, 1.0),
-      fontSize: 12
+      color: const Color.fromRGBO(255, 75, 38, 1.0),
+      fontSize: 12.sp
   );
-  static const Searchforcontents = TextStyle(
-    fontSize: 10,
+  static  TextStyle Searchforcontents = TextStyle(
+    fontSize: 10.sp,
     fontWeight: FontWeight.w800,
-    color: Color.fromRGBO(255, 75, 38, 1.0)
+    color: const Color.fromRGBO(255, 75, 38, 1.0)
   );
-  static const TextContacts = TextStyle(
-      color: Colors.white,fontSize: 40,
+  static  TextStyle TextContacts = TextStyle(
+      color: Colors.white,fontSize: 40.sp,
       fontWeight: FontWeight.w400
   );
-  static const Add_Members = TextStyle(
+  static  TextStyle Add_Members = TextStyle(
       color: Colors.white,
-      fontSize: 30,
+      fontSize: 30.sp,
       fontWeight: FontWeight.w400
   );
-  static const Members_who_added = TextStyle(
-      color: Color.fromRGBO(255, 75, 38, 1.0),
-      fontSize: 10,
+  static  TextStyle Members_who_added = TextStyle(
+      color: const Color.fromRGBO(255, 75, 38, 1.0),
+      fontSize: 10.sp,
       fontWeight: FontWeight.w800
   );
-  static const Select_Contact = TextStyle(
+  static  TextStyle Select_Contact = TextStyle(
       color: Colors.white,
-      fontSize: 12,
+      fontSize: 12.sp,
       fontWeight: FontWeight.w800
   );
-  static const Addfriends = TextStyle(
+  static  TextStyle Addfriends = TextStyle(
       color: Colors.white,
-      fontSize: 16,
+      fontSize: 16.sp,
       fontWeight: FontWeight.w800
   );
-  static const Wirte_a_text = TextStyle(
+  static  TextStyle Wirte_a_text = TextStyle(
       color: Colors.black,
-      fontSize: 24,
+      fontSize: 24.sp,
       fontWeight: FontWeight.w800
   );
-  static const Send_the_massage  = TextStyle(
-      color: Color.fromRGBO(255, 75, 38, 1.0),
-      fontSize: 15,
+  static  TextStyle Send_the_massage  = TextStyle(
+      color: const Color.fromRGBO(255, 75, 38, 1.0),
+      fontSize: 15.sp,
       fontWeight: FontWeight.w800
   );
 }

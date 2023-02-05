@@ -25,10 +25,10 @@ class _bouton_navigation_barState extends State<bouton_navigation_bar> {
             },
             items:
             [
-              BottomNavigationBarItem(icon:Icon(Icons.chat,size: 30.h,),label: "Chat",),
-              BottomNavigationBarItem(icon: Icon(Icons.call,size: 30.h,),label: "Call"),
-              BottomNavigationBarItem(icon: Icon(Icons.groups,size:30.h,),label: "Groups"),
-              BottomNavigationBarItem(icon: Icon(Icons.menu,size:30.h,),label: "Menu"),
+              BottomNavigationBarItem(icon:Icon(Icons.chat,size: 30.sp,),label: "Chat",),
+              BottomNavigationBarItem(icon: Icon(Icons.call,size: 30.sp,),label: "Call"),
+              BottomNavigationBarItem(icon: Icon(Icons.groups,size:30.sp,),label: "Groups"),
+              BottomNavigationBarItem(icon: Icon(Icons.menu,size:30.sp,),label: "Menu"),
             ]
         ),
       ),

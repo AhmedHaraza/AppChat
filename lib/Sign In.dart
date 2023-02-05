@@ -54,19 +54,19 @@ class _Sign_InState extends State<Sign_In> {
                   Container(
                     child: Myform2(
                         'Password',
-                        const Icon(
+                         Icon(
                           Icons.lock,
-                          size: 20,
-                          color: Color.fromRGBO(95, 90, 90, 1.0),
+                          size: 20.sp,
+                          color: const Color.fromRGBO(95, 90, 90, 1.0),
                         ),
                         TextInputType.visiblePassword,
                         addicon: IconButton(
                           onPressed: () {
                             setState(() {});
                           },
-                          icon: (const Icon(
+                          icon: ( Icon(
                             Icons.visibility,
-                            size: 20,
+                            size: 20.sp,
                           )),
                           color: const Color.fromRGBO(95, 90, 90, 1.0),
                         )),

@@ -24,7 +24,7 @@ class Add_Members extends StatelessWidget {
              SizedBox(height: 30.h,),
              SizedBox(height: 30.h,),
             Container(
-              width: 500,
+              width: 500.w,
                 child: const Searchforcontents()
             ),
              SizedBox(height: 15.h,),
