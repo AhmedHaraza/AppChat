@@ -1,5 +1,4 @@
 // ignore_for_file: constant_identifier_names, camel_case_types
-
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:graduation_project_my_own_talki/CircleAvatar/CircleAvatar_trun_right.dart';
@@ -75,6 +74,7 @@ class contectsmessegegroup extends StatelessWidget {
           Padding(
             padding: REdgeInsets.only(right: 20, left: 20),
             child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text(
                   "Send the massage ",

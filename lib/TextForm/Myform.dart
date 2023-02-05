@@ -15,18 +15,18 @@ class MyForme extends StatelessWidget {
     return Container(
       height: 40.h,
       child: TextFormField(
-        style:  TextStyle(
+        style: TextStyle(
             color: const Color.fromRGBO(95, 90, 90, 1.0),
-            height: 1.h, fontSize: 20.sp, fontWeight: FontWeight.w500),
+            height: 1.h,
+            fontSize: 20.sp,
+            fontWeight: FontWeight.w500),
         decoration: InputDecoration(
           enabledBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(15.r),
-              borderSide:
-                   BorderSide(color: MyThemeData.colorgray, width: 3.w)),
+              borderSide: BorderSide(color: MyThemeData.colorgray, width: 3.w)),
           focusedBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(15.r),
-              borderSide:
-                   BorderSide(color: MyThemeData.colorgray, width: 3.w)),
+              borderSide: BorderSide(color: MyThemeData.colorgray, width: 3.w)),
           hintText: "$name",
           hintStyle: TextStyle(
             color: MyThemeData.filetextfiled,
@@ -37,7 +37,7 @@ class MyForme extends StatelessWidget {
           filled: true,
           fillColor: MyThemeData.colorgray,
           suffixIcon: Padding(
-            padding:  REdgeInsets.only(right: 15),
+            padding: REdgeInsets.only(right: 15),
             child: addicon,
           ),
           prefixIcon: ImageIcon(
@@ -45,7 +45,6 @@ class MyForme extends StatelessWidget {
             color: MyThemeData.filetextfiled,
           ),
         ),
-
         keyboardType: InputType,
       ),
     );
@@ -67,19 +66,19 @@ class Myform2 extends StatelessWidget {
     return Container(
       height: 40.h,
       child: TextFormField(
-        style:   TextStyle(
+        style: TextStyle(
           color: const Color.fromRGBO(95, 90, 90, 1.0),
-            height: 3.5.h, fontSize: 13.sp, fontWeight: FontWeight.w700,
+          height: 3.5.h,
+          fontSize: 13.sp,
+          fontWeight: FontWeight.w700,
         ),
         decoration: InputDecoration(
           enabledBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(15.r),
-              borderSide:
-                   BorderSide(color: MyThemeData.colorgray, width: 3.w)),
+              borderSide: BorderSide(color: MyThemeData.colorgray, width: 3.w)),
           focusedBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(15.r),
-              borderSide:
-                   BorderSide(color: MyThemeData.colorgray, width: 3.w)),
+              borderSide: BorderSide(color: MyThemeData.colorgray, width: 3.w)),
           hintText: "$name",
           hintStyle: TextStyle(
             color: MyThemeData.filetextfiled,
@@ -90,7 +89,7 @@ class Myform2 extends StatelessWidget {
           filled: true,
           fillColor: MyThemeData.colorgray,
           suffixIcon: Padding(
-            padding:  REdgeInsets.only(right: 8),
+            padding: REdgeInsets.only(right: 8),
             child: addicon,
           ),
           prefixIcon: Lock,
@@ -101,134 +100,111 @@ class Myform2 extends StatelessWidget {
     );
   }
 }
+
 class Searchforcontents extends StatelessWidget {
   const Searchforcontents({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
-    return  Container(
-      height: 40.h,
-      child: TextFormField(
-        style:  TextStyle(
-            color: const Color.fromRGBO(255, 75, 38, 1.0),
-          fontSize: 12.sp
-        ),
-        decoration:  InputDecoration(
-          contentPadding:  REdgeInsets.only(left: 20),
-            enabledBorder: OutlineInputBorder(
+    return Container(
+        height: 40.h,
+        child: TextFormField(
+          style: TextStyle(
+              color: const Color.fromRGBO(255, 75, 38, 1.0), fontSize: 12.sp),
+          decoration: InputDecoration(
+              contentPadding: REdgeInsets.only(left: 20),
+              enabledBorder:
+                  OutlineInputBorder(borderRadius: BorderRadius.circular(50.r)),
+              focusedBorder: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(50.r),
-                borderSide:  BorderSide(
-                    width:4.w
-                )
-            ),
-            focusedBorder: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(50.r),
-                borderSide:  BorderSide(
-                    color: Colors.white,
-                    width: 4.w
-                )
-            ),
-            filled: true,
-            fillColor: Colors.white,
-            hintText: "Search for contents",
-            hintStyle: const TextStyle(
-              color: Color.fromRGBO(255, 75, 38, 1.0),
-              fontWeight: FontWeight.w800,
-            ),
-            hintMaxLines: 1,
-            suffixIcon:  Padding(
-              padding: REdgeInsets.only(right: 7),
-              child: const Icon(Icons.search,color: Color.fromRGBO(255, 75, 38, 1.0),),
-            )
-        ),
-      ),
-    );
+              ),
+              filled: true,
+              fillColor: Colors.white,
+              hintText: "Search for contents",
+              hintStyle: const TextStyle(
+                color: Color.fromRGBO(255, 75, 38, 1.0),
+                fontWeight: FontWeight.w800,
+              ),
+              hintMaxLines: 1,
+              suffixIcon: Padding(
+                padding: REdgeInsets.only(right: 7),
+                child: const Icon(
+                  Icons.search,
+                  color: Color.fromRGBO(255, 75, 38, 1.0),
+                ),
+              )),
+        ));
   }
 }
+
 class SearchforGroup extends StatelessWidget {
   const SearchforGroup({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
-    return  Container(
+    return Container(
       height: 40.h,
       child: TextFormField(
-        style: const TextStyle(
-            color: Color.fromRGBO(255, 75, 38, 1.0)
-        ),
-        decoration:  InputDecoration(
-            contentPadding:  REdgeInsets.only(left: 20),
+        style: const TextStyle(color: Color.fromRGBO(255, 75, 38, 1.0)),
+        decoration: InputDecoration(
+            contentPadding: REdgeInsets.only(left: 20),
             enabledBorder: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(50.r),
-                borderSide:  BorderSide(
-                    width:4.w
-                )
-            ),
+                borderSide: BorderSide(width: 4.w)),
             focusedBorder: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(50.r),
-                borderSide:  BorderSide(
-                    color: Colors.white,
-                    width: 4.w
-                )
-            ),
+                borderSide: BorderSide(color: Colors.white, width: 4.w)),
             filled: true,
             fillColor: Colors.white,
             hintText: "Search for Group",
-            hintStyle:  TextStyle(
-              color: const Color.fromRGBO(255, 75, 38, 1.0),
-              fontWeight: FontWeight.w800,
-              fontSize: 12.sp
-            ),
+            hintStyle: TextStyle(
+                color: const Color.fromRGBO(255, 75, 38, 1.0),
+                fontWeight: FontWeight.w800,
+                fontSize: 12.sp),
             hintMaxLines: 1,
-            suffixIcon:  Padding(
+            suffixIcon: Padding(
               padding: REdgeInsets.only(right: 7),
-              child: const Icon(Icons.search,color: Color.fromRGBO(255, 75, 38, 1.0),),
-            )
-        ),
+              child: const Icon(
+                Icons.search,
+                color: Color.fromRGBO(255, 75, 38, 1.0),
+              ),
+            )),
       ),
     );
   }
 }
+
 class Search extends StatelessWidget {
   const Search({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
-    return  Container(
+    return Container(
       height: 40.h,
       child: TextFormField(
-        style: const TextStyle(
-            color: Color.fromRGBO(255, 75, 38, 1.0)
-        ),
-        decoration:  InputDecoration(
-            contentPadding:  REdgeInsets.only(left: 20),
+        style: const TextStyle(color: Color.fromRGBO(255, 75, 38, 1.0)),
+        decoration: InputDecoration(
+            contentPadding: REdgeInsets.only(left: 20),
             enabledBorder: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(50.r),
-                borderSide:  BorderSide(
-                    width:4.w
-                )
-            ),
+                borderSide: BorderSide(width: 4.w)),
             focusedBorder: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(50.r),
-                borderSide:  BorderSide(
-                    color: Colors.white,
-                    width: 4.w
-                )
-            ),
+                borderSide: BorderSide(color: Colors.white, width: 4.w)),
             filled: true,
             fillColor: Colors.white,
             hintText: "Search for contents",
-            hintStyle:  TextStyle(
+            hintStyle: TextStyle(
               color: const Color.fromRGBO(255, 75, 38, 1.0),
               fontSize: 12.sp,
               fontWeight: FontWeight.w800,
             ),
             hintMaxLines: 1,
-            suffixIcon:  Padding(
+            suffixIcon: Padding(
               padding: REdgeInsets.only(right: 7),
-              child: const Icon(Icons.search,color: Color.fromRGBO(255, 75, 38, 1.0),),
-            )
-        ),
+              child: const Icon(
+                Icons.search,
+                color: Color.fromRGBO(255, 75, 38, 1.0),
+              ),
+            )),
       ),
     );
   }
 }
-
-
