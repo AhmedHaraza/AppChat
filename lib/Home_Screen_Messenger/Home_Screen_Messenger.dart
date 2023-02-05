@@ -1,3 +1,5 @@
+// ignore_for_file: unused_local_variable, use_key_in_widget_constructors, camel_case_types, constant_identifier_names, file_names
+
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:graduation_project_my_own_talki/CircleAvatar/CircleAvatar_add.dart';
@@ -17,33 +19,43 @@ class Home_Screen_Messenger extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Container(
-              margin:  REdgeInsets.only(top: 100,left: 20),
-              child: const Text("Pinned Message",style: MyThemeData.Addfriends,)
+              margin: REdgeInsets.only(top: 100, left: 20),
+              child: Text(
+                "Pinned Message",
+                style: MyThemeData.Addfriends,
+              )),
+          SizedBox(
+            height: 10.h,
           ),
-          SizedBox(height: 10.h,),
           Padding(
-            padding:  REdgeInsets.only(left: 20),
+            padding: REdgeInsets.only(left: 20),
             child: const CircleAvatar_add(),
           ),
-           SizedBox(height: 13.h,),
-           Padding(
-            padding:  REdgeInsets.only(left: 20,right: 20),
-            child: Searchforcontents()
+          SizedBox(
+            height: 13.h,
           ),
-           SizedBox(height: 13.h,),
           Padding(
-            padding:  REdgeInsets.only(left: 20),
-            child: const Text("Your Message",style: MyThemeData.Addfriends,),
+              padding: REdgeInsets.only(left: 20, right: 20),
+              child: const Searchforcontents()),
+          SizedBox(
+            height: 13.h,
+          ),
+          Padding(
+            padding: REdgeInsets.only(left: 20),
+            child: Text(
+              "Your Message",
+              style: MyThemeData.Addfriends,
+            ),
           )
         ],
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       floatingActionButton: FloatingActionButton(
-        backgroundColor:  const Color.fromRGBO(255, 75, 38, 1.0),
-        onPressed: (){},
-        child: Image.asset("assets/image/chat.png",color: Colors.white),
+        backgroundColor: const Color.fromRGBO(255, 75, 38, 1.0),
+        onPressed: () {},
+        child: Image.asset("assets/image/chat.png", color: Colors.white),
       ),
-      bottomNavigationBar:bouton_navigation_bar(),
+      bottomNavigationBar: bouton_navigation_bar(),
     );
   }
 }

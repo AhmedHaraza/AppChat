@@ -1,3 +1,6 @@
+// ignore: unnecessary_import
+// ignore_for_file: avoid_unnecessary_containers, unnecessary_import, duplicate_ignore, file_names
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -22,7 +25,7 @@ class New extends StatelessWidget {
             ),
           ),
           // Solid text as fill.
-           Text(
+          Text(
             'Talki',
             style: TextStyle(
               fontSize: 32.sp,

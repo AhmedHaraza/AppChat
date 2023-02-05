@@ -1,5 +1,8 @@
+// ignore_for_file: prefer_const_constructors, camel_case_types, file_names
+
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+
 class CircleAvatar_turn_right extends StatelessWidget {
   const CircleAvatar_turn_right({Key? key}) : super(key: key);
 
@@ -10,7 +13,7 @@ class CircleAvatar_turn_right extends StatelessWidget {
         Container(
           width: 40.w,
           height: 40.h,
-          decoration:  BoxDecoration(
+          decoration: BoxDecoration(
               color: Color.fromRGBO(255, 75, 38, 1.0),
               shape: BoxShape.circle,
               boxShadow: [
@@ -18,11 +21,13 @@ class CircleAvatar_turn_right extends StatelessWidget {
                     color: Color.fromRGBO(255, 75, 38, 1.0),
                     spreadRadius: 3.r,
                     blurRadius: 5.r,
-                    offset: Offset(0.0, 0.0)
-                )
-              ]
+                    offset: Offset(0.0, 0.0))
+              ]),
+          child: Icon(
+            Icons.arrow_right_alt_sharp,
+            color: Colors.white,
+            size: 40.sp,
           ),
-          child:  Icon(Icons.arrow_right_alt_sharp, color: Colors.white, size: 40.sp,),
         ),
       ],
     );

@@ -1,3 +1,5 @@
+// ignore_for_file: constant_identifier_names, file_names
+
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:graduation_project_my_own_talki/Home_Screen_Messenger/boutonnavigationbar.dart';
@@ -13,30 +15,37 @@ class Addfrinds extends StatelessWidget {
     return Scaffold(
         resizeToAvoidBottomInset: false,
         body: Padding(
-        padding:  REdgeInsets.only(top: 80,left: 20),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children:  [
-            const Text("Add friends",style: MyThemeData.Addfriends,),
-            SizedBox(height: 10.h,),
-            Container(
-              height: 40.h,
-              margin: REdgeInsets.only(right: 20),
-                child: const Search()
-            ),
-            SizedBox(height: 10.h,),
-            const Text("Contact",style: MyThemeData.Addfriends,),
-          ],
+          padding: REdgeInsets.only(top: 80, left: 20),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                "Add friends",
+                style: MyThemeData.Addfriends,
+              ),
+              SizedBox(
+                height: 10.h,
+              ),
+              Container(
+                  height: 40.h,
+                  margin: REdgeInsets.only(right: 20),
+                  child: const Search()),
+              SizedBox(
+                height: 10.h,
+              ),
+              Text(
+                "Contact",
+                style: MyThemeData.Addfriends,
+              ),
+            ],
+          ),
         ),
-      ),
         floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
         floatingActionButton: FloatingActionButton(
-          backgroundColor:  const Color.fromRGBO(255, 75, 38, 1.0),
-          onPressed: (){},
-          child: Image.asset("assets/image/chat.png",color: Colors.white),
+          backgroundColor: const Color.fromRGBO(255, 75, 38, 1.0),
+          onPressed: () {},
+          child: Image.asset("assets/image/chat.png", color: Colors.white),
         ),
-        bottomNavigationBar: bouton_navigation_bar()
-    );
-
+        bottomNavigationBar: bouton_navigation_bar());
   }
 }

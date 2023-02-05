@@ -1,9 +1,8 @@
-// ignore_for_file: use_key_in_widget_constructors, constant_identifier_names, camel_case_types, sort_child_properties_last, avoid_unnecessary_containers, file_names, non_constant_identifier_names
+// ignore_for_file: use_key_in_widget_constructors, constant_identifier_names, camel_case_types, sort_child_properties_last, avoid_unnecessary_containers, file_names, non_constant_identifier_names, deprecated_member_use
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:graduation_project_my_own_talki/CircleAvatar/CircleAvatar.dart';
 import 'package:graduation_project_my_own_talki/Navigator.dart';
-import 'package:graduation_project_my_own_talki/Sign%20In.dart';
 import 'package:graduation_project_my_own_talki/TextForm/Myform.dart';
 import 'package:graduation_project_my_own_talki/my_theme.dart';
 
@@ -30,7 +29,7 @@ class _create_an_accountState extends State<create_an_account> {
               child: Row(
                 children: [
                   Padding(
-                      padding:  REdgeInsets.only(top: 60, left: 20, right: 170),
+                      padding: REdgeInsets.only(top: 60, left: 20, right: 170),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
@@ -44,13 +43,13 @@ class _create_an_accountState extends State<create_an_account> {
                           ),
                         ],
                       )),
-                   SizedBox(height: 4.h),
+                  SizedBox(height: 4.h),
                 ],
               ),
             ),
             InkWell(
               onTap: () {},
-              child:  Center(
+              child: Center(
                 child: CircleAvatar(
                   child: const ImageIcon(AssetImage('assets/image/camera.png')),
                   backgroundColor: const Color.fromRGBO(95, 90, 90, 1.0),
@@ -58,35 +57,35 @@ class _create_an_accountState extends State<create_an_account> {
                 ),
               ),
             ),
-             SizedBox(
+            SizedBox(
               height: 14.h,
             ),
             Padding(
-                padding:  REdgeInsets.only(left: 20, right: 20),
+                padding: REdgeInsets.only(left: 20, right: 20),
                 child: MyForme(
                     'Email or Phone Number',
                     icon: 'assets/image/icon_man.png',
                     TextInputType.emailAddress)),
-             SizedBox(height: 10.h),
+            SizedBox(height: 10.h),
             Container(
               child: Padding(
-                padding:  REdgeInsets.only(left: 20, right: 20),
+                padding: REdgeInsets.only(left: 20, right: 20),
                 child: MyForme(
                     'first Name',
                     icon: 'assets/image/icon_man.png',
                     TextInputType.name),
               ),
             ),
-             SizedBox(height: 10.h),
+            SizedBox(height: 10.h),
             Container(
-                margin:  REdgeInsets.fromLTRB(20, 0, 20, 0),
+                margin: REdgeInsets.fromLTRB(20, 0, 20, 0),
                 child: MyForme(
                     'Last Name',
                     icon: 'assets/image/icon_man.png',
                     TextInputType.name)),
-             SizedBox(height: 10.h),
+            SizedBox(height: 10.h),
             Padding(
-              padding:  REdgeInsets.only(left: 20, right: 20),
+              padding: REdgeInsets.only(left: 20, right: 20),
               child: Myform2(
                   'Password',
                   const Icon(
@@ -102,14 +101,17 @@ class _create_an_accountState extends State<create_an_account> {
                         Paswword_Visibilty == !Paswword_Visibilty;
                       });
                     },
-                    icon: (const Icon(Icons.visibility,size: 20,)),
+                    icon: (const Icon(
+                      Icons.visibility,
+                      size: 20,
+                    )),
                     color: const Color.fromRGBO(95, 90, 90, 1.0),
                   )),
             ),
-             SizedBox(height: 10.h),
+            SizedBox(height: 10.h),
             Center(
               child: Padding(
-                padding:  REdgeInsets.only(left: 20, right: 20),
+                padding: REdgeInsets.only(left: 20, right: 20),
                 child: Myform2(
                     'Confirm Password',
                     const Icon(
@@ -122,14 +124,17 @@ class _create_an_accountState extends State<create_an_account> {
                       onPressed: () {
                         setState(() {});
                       },
-                      icon: (const Icon(Icons.visibility,size: 20,)),
+                      icon: (const Icon(
+                        Icons.visibility,
+                        size: 20,
+                      )),
                       color: const Color.fromRGBO(95, 90, 90, 1.0),
                     )),
               ),
             ),
-             SizedBox(height: 10.h),
+            SizedBox(height: 10.h),
             Padding(
-              padding:  REdgeInsets.only(left: 20, right: 20),
+              padding: REdgeInsets.only(left: 20, right: 20),
               child: Myform2(
                 'Birthdate dd / mm / yy',
                 const Icon(
@@ -140,74 +145,76 @@ class _create_an_accountState extends State<create_an_account> {
                 TextInputType.visiblePassword,
               ),
             ),
-             SizedBox(height:10.h),
+            SizedBox(height: 10.h),
             Wrap(
               children: [
                 Container(
-                  margin:  REdgeInsets.only(left: 20),
+                  margin: REdgeInsets.only(left: 20),
                   width: 7.0.w,
                   height: 15.0.h,
                   decoration: const BoxDecoration(
                       color: Color.fromRGBO(95, 90, 90, 1.0),
                       shape: BoxShape.circle),
                 ),
-                 SizedBox(
+                SizedBox(
                   width: 4.w,
                   height: 20.h,
                 ),
                 Container(
                   child: RichText(
                     maxLines: 2,
-                    text: const TextSpan(children: [
+                    text: TextSpan(children: [
                       TextSpan(
                           text: 'By Clicking The  ',
-                          style: MyThemeData.Rich_Text
-                      )]),
+                          style: MyThemeData.Rich_Text)
+                    ]),
                   ),
                 ),
                 Container(
                   child: const Text(
                     'Register  ',
                     style: TextStyle(
-                        color: Color.fromRGBO(255, 75, 38, 1.0),
-                        fontSize: 12),
+                        color: Color.fromRGBO(255, 75, 38, 1.0), fontSize: 12),
                   ),
                 ),
                 Container(
-                  child: const Text('button, you agree to the public offer',style: MyThemeData.Rich_Text,
+                  child: Text(
+                    'button, you agree to the public offer',
+                    style: MyThemeData.Rich_Text,
                   ),
                 ),
               ],
             ),
             Container(
-              margin:  REdgeInsets.only(left: 40),
+              margin: REdgeInsets.only(left: 40),
               //child: const Text('   offer',style: MyThemeData.Rich_Text,),
             ),
             const SizedBox(height: 10),
             Row(
-              children:  [
-                  Expanded(
+              children: [
+                Expanded(
                   flex: 2,
                   child: Padding(
-                    padding: REdgeInsets.only(left: 24),
-                     child: const Text('Register',style: MyThemeData.Register,)
-                  ),
+                      padding: REdgeInsets.only(left: 24),
+                      child: Text(
+                        'Register',
+                        style: MyThemeData.Register,
+                      )),
                 ),
-                Expanded(child: InkWell(
-                  onTap: (){
-                    CircleAvatar_go_to_sin_in(context);
-                  },
-                    child: My_CircleAvatar()
-                )
-                )
+                Expanded(
+                    child: InkWell(
+                        onTap: () {
+                          CircleAvatar_go_to_sin_in(context);
+                        },
+                        child: My_CircleAvatar()))
               ],
             ),
-             SizedBox(height: 13.h),
+            SizedBox(height: 13.h),
             Padding(
-              padding:  REdgeInsets.only(left: 20,right: 20),
+              padding: REdgeInsets.only(left: 20, right: 20),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
-                children: const [
+                children: [
                   Center(
                     child: Center(
                       child: Text(
@@ -219,39 +226,42 @@ class _create_an_accountState extends State<create_an_account> {
                 ],
               ),
             ),
-             SizedBox(height: 10.h),
+            SizedBox(height: 10.h),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
-              children:  [
-                const Image(image: AssetImage('assets/image/logos_google-icon.png')),
+              children: [
+                const Image(
+                    image: AssetImage('assets/image/logos_google-icon.png')),
                 SizedBox(
                   width: 17.w,
                 ),
                 const Center(
                   child: Image(
-                      image:
-                          AssetImage('assets/image/foundation_social-apple.png')),
+                      image: AssetImage(
+                          'assets/image/foundation_social-apple.png')),
                 ),
-                 SizedBox(
+                SizedBox(
                   width: 17.w,
                 ),
-                const Center(child: Image(image: AssetImage('assets/image/logos_facebook.png'))),
+                const Center(
+                    child: Image(
+                        image: AssetImage('assets/image/logos_facebook.png'))),
               ],
             ),
-             SizedBox(height: 12.h),
-             Center(
+            SizedBox(height: 12.h),
+            Center(
               child: InkWell(
-                onTap: (){
+                onTap: () {
                   Select_Screen_Sin_In(context);
                 },
-                child: const Text(
+                child: Text(
                   'Back',
                   style: MyThemeData.Text_Sin_in,
                 ),
               ),
             ),
             Container(
-              margin:  REdgeInsets.only(bottom: 30),
+              margin: REdgeInsets.only(bottom: 30),
             )
           ],
         ),

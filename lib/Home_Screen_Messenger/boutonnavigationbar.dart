@@ -1,9 +1,13 @@
+// ignore_for_file: camel_case_types, use_key_in_widget_constructors, avoid_unnecessary_containers, prefer_const_constructors
+
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+
 class bouton_navigation_bar extends StatefulWidget {
   @override
   State<bouton_navigation_bar> createState() => _bouton_navigation_barState();
 }
+
 class _bouton_navigation_barState extends State<bouton_navigation_bar> {
   int currentIndex = 0;
   @override
@@ -14,23 +18,41 @@ class _bouton_navigation_barState extends State<bouton_navigation_bar> {
         notchMargin: 5,
         shape: CircularNotchedRectangle(),
         child: BottomNavigationBar(
-          backgroundColor: Colors.transparent,
+            backgroundColor: Colors.transparent,
             elevation: 0.0,
             type: BottomNavigationBarType.fixed,
             currentIndex: currentIndex,
-            onTap: (index){
+            onTap: (index) {
               currentIndex = index;
-              setState(() {
-              });
+              setState(() {});
             },
-            items:
-            [
-              BottomNavigationBarItem(icon:Icon(Icons.chat,size: 30.sp,),label: "Chat",),
-              BottomNavigationBarItem(icon: Icon(Icons.call,size: 30.sp,),label: "Call"),
-              BottomNavigationBarItem(icon: Icon(Icons.groups,size:30.sp,),label: "Groups"),
-              BottomNavigationBarItem(icon: Icon(Icons.menu,size:30.sp,),label: "Menu"),
-            ]
-        ),
+            items: [
+              BottomNavigationBarItem(
+                icon: Icon(
+                  Icons.chat,
+                  size: 30.sp,
+                ),
+                label: "Chat",
+              ),
+              BottomNavigationBarItem(
+                  icon: Icon(
+                    Icons.call,
+                    size: 30.sp,
+                  ),
+                  label: "Call"),
+              BottomNavigationBarItem(
+                  icon: Icon(
+                    Icons.groups,
+                    size: 30.sp,
+                  ),
+                  label: "Groups"),
+              BottomNavigationBarItem(
+                  icon: Icon(
+                    Icons.menu,
+                    size: 30.sp,
+                  ),
+                  label: "Menu"),
+            ]),
       ),
     );
   }
